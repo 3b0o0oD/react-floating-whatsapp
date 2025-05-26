@@ -179,7 +179,7 @@ export function FloatingWhatsApp({
     event.preventDefault()
     if (!inputRef.current?.value) return
 
-    window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${inputRef.current.value}`)
+    window.open(`https://wa.me/send/?phone=${phoneNumber}&text=${inputRef.current.value}`)
     if (onSubmit) onSubmit(event, inputRef.current.value)
     inputRef.current.value = ''
   }
